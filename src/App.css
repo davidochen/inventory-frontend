@@ -1,0 +1,198 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* General App Styling */
+/* General App Styling */
+.App {
+  text-align: center;
+  background-color: #000; /* Black background */
+  color: #e0b3ff; /* Light purple font color */
+  font-family: 'Roboto', sans-serif; /* Use a skinny font */
+  font-weight: 300; /* Thin font weight */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Keeps the app vertically centered */
+  overflow: hidden;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #c77dff; /* Brighter purple for header */
+  text-shadow: 0 0 10px #c77dff, 0 0 20px #c77dff;
+  font-weight: 300; /* Thin font */
+}
+
+/* Input Styling */
+input[type="text"] {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  margin-bottom: 10px;
+  outline: none;
+  background-color: #1a001a; /* Dark purple input background */
+  color: #e0b3ff; /* Light purple text */
+  box-shadow: 0 0 5px #a64dff;
+}
+
+input[type="text"]::placeholder {
+  color: #d9a3ff; /* Subtle placeholder color */
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #7d3cff; /* Vibrant purple */
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* White text */
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #a64dff, 0 0 20px #a64dff;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #9b5dfb; /* Slightly lighter purple on hover */
+  box-shadow: 0 0 15px #c77dff, 0 0 25px #c77dff;
+}
+
+/* Message Styling */
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #a64dff;
+  font-weight: 300; /* Thin font */
+  color: #e0b3ff;
+}
+
+/* List Styling */
+.item-list {
+  list-style: none;
+  padding: 10px; /* Add padding for some spacing inside the list */
+  margin: 20px 0;
+  width: 300px;
+  height: 150px; /* Fixed height for visible items */
+  overflow-y: scroll; /* Enables scrolling when items exceed height */
+  background-color: rgba(26, 0, 26, 0.8); /* Semi-transparent dark purple background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 15px #7d3cff, 0 0 20px rgba(123, 39, 245, 0.6); /* Glowing effect */
+  border: solid; /* Apply border styling */
+  border-width: 1px 1px 0px 1px; /* Remove the bottom border */
+  border-color: rgba(199, 125, 255, 0.3); /* Light purple border */
+}
+
+/* Scrollbar Styling */
+.item-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.item-list::-webkit-scrollbar-thumb {
+  background-color: #7d3cff; /* Purple glowing scrollbar thumb */
+  border-radius: 3px;
+}
+
+/* List Items Styling */
+li {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: #e0b3ff;
+  font-size: 1.2rem;
+  font-weight: 300; /* Thin font for list items */
+  text-shadow: 0 0 5px #c77dff, 0 0 10px #c77dff;
+  opacity: 1; /* Full opacity for visible items */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Faded items */
+li.fade {
+  opacity: 0.5; /* Reduced opacity for older items */
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin: 5px 0;
+  background-color: rgba(128, 0, 128, 0.2); /* Light purple background */
+  border-radius: 5px;
+  position: relative;
+  color: white;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.item:hover {
+  background-color: rgba(128, 0, 128, 0.4); /* Darker purple on hover */
+}
+
+.item span {
+  flex-grow: 1;
+}
+
+.delete-button {
+  display: block;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  transition: color 0.3s ease;
+}
+
+
